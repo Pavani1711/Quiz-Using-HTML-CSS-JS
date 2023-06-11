@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: cornflowerblue;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    min-height: 100vh;
+}
+.header{
+    background-color: whitesmoke;
+    min-height: 100px;
+    width: 500px;
+    padding: 30px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+.header:hover{
+    transform: translateY(-15px);
+}
+.container{
+    background-color: coral;
+    padding: 9px 15px; 
+    margin: -20px -20px 20px;
+    border-radius: 30px 30px 30px 30px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+.header #countdown{
+    background-color: brown;
+    border-radius: 50%;
+    padding: 9px 20px;
+}
+.set{
+    display: none;
+}
+.set.active{
+    display: block;
+}
+.set h4{
+    margin: 0 0 15px;
+    font-size:20px;
+}
+.answer{
+    position: relative;
+    margin-bottom: 10px;
+}
+.answer input{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+.answer span{
+    display: block;
+    padding: 8px 15px;
+    background-color: mistyrose;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+}
+.answer:hover span{
+    background-color: lightcoral;
+    transform: scale(1.07);
+}
+.answer input:checked + span{
+    background-color: red;
+}
+.answer input[valid]:checked + span{
+    background-color: green;
+    color: white;
+}
+.footer{
+    padding: 15px 0 0;
+    text-align: left;
+}
+.skip{
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: coral;
+    border-radius: 30px;
+    margin-left: 360px;
+    transition: all 0.3s ease-in-out;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.skip:hover{
+    background-color: lightsalmon;
+    color: white;
+}
+.prevb{
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: coral;
+    border-radius: 30px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+    font-size: 20px;
+    align-items: center;
+    margin-top: 17px;
+}
+.prevb:hover{
+    background-color: lightsalmon;
+    color: white;
+    cursor: pointer;
+}
+img{
+    position: relative;
+    width: 30%;
+    height: 50%;
+    align-items: center;
+    margin-left: 160px;
+}
+.kjl h3{
+    font-size: 20px;
+    
+}
